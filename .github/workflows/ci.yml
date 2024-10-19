@@ -60,6 +60,7 @@ jobs:
       postgres:
         image: postgres
         env:
+          POSTGRES_DB: beautiful_blog_test
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
         ports:
