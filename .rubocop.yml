@@ -8,3 +8,5 @@ Style/StringLiterals:
     - double_quotes
 Style/FrozenStringLiteralComment:
   Enabled: true
+Bundler/OrderedGems:
+  Enabled: true
