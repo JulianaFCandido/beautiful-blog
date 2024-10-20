@@ -20,14 +20,14 @@ gem 'tzinfo-data', platforms: %i[windows jruby]
 group :development, :test do
   gem 'brakeman', '~> 6.2.2'
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
-  gem 'rspec-rails'
-  gem 'rubocop-discourse'
-  gem 'rubocop-github'
-  gem 'rubocop-performance'
-  gem 'rubocop-rails'
-  gem 'rubocop-rails-accessibility'
-  gem 'rubocop-rspec'
-  gem 'rubocop-rspec_rails'
+  gem 'rspec-rails', require: false
+  gem 'rubocop-discourse', require: false
+  gem 'rubocop-github', require: false
+  gem 'rubocop-performance', require: false
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails-accessibility', require: false
+  gem 'rubocop-rspec', require: false
+  gem 'rubocop-rspec_rails', require: false
 end
 
 group :development do
