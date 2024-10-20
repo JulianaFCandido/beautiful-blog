@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CommentController < ApplicationController
   def index
   end
