@@ -13,6 +13,8 @@ services:
       - 5432:5432
 
   rails:
+    tty: true
+    stdin_open: true
     build: ./
     container_name: rails
     ports:
