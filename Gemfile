@@ -15,20 +15,20 @@ gem 'sassc-rails', '~> 2.1.2'
 gem 'sprockets-rails'
 gem 'stimulus-rails'
 gem 'turbo-rails'
-gem 'tzinfo-data', platforms: %i[ windows jruby ]
+gem 'tzinfo-data', platforms: %i[windows jruby]
 
 group :development, :test do
   gem 'brakeman', '~> 6.2.2'
-  gem 'debug', platforms: %i[ mri windows ], require: 'debug/prelude'
+  gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
   gem 'rspec-rails'
-  gem 'rubocop-rails-omakase'
+  gem 'rubocop-github'
+  gem 'rubocop-performance'
+  gem 'rubocop-rails'
+  gem 'rubocop-rails-accessibility'
+  gem 'rubocop-rspec'
+  gem 'rubocop-rspec_rails'
 end
 
 group :development do
   gem 'web-console'
-end
-
-group :test do
-  gem 'capybara'
-  gem 'selenium-webdriver'
 end

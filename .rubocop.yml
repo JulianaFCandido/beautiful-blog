@@ -1,6 +1,19 @@
-# Omakase Ruby styling for Rails
-inherit_gem: { rubocop-rails-omakase: rubocop.yml }
+require:
+  - rubocop-github
+  - rubocop-github-rails
 
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - db/schema.rb
+    - db/migrate/*
+    - bin/bundle
+
+Style/BlockComments:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
 Style/StringLiterals:
   EnforcedStyle: single_quotes
   SupportedStyles:
@@ -8,5 +21,15 @@ Style/StringLiterals:
     - double_quotes
 Style/FrozenStringLiteralComment:
   Enabled: true
+
 Bundler/OrderedGems:
   Enabled: true
+
+Layout/LineLength:
+  Max: 120
+  AllowedPatterns:
+    - !ruby/regexp /\A *# /
+
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*

@@ -54,7 +54,7 @@ jobs:
         run: bundle exec rubocop -f github
 
       - name: Search for code smell
-        run: bundle exec reek -f github
+        run: bundle exec reek
 
   test:
     runs-on: ubuntu-latest
