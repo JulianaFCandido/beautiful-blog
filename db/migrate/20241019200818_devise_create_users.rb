@@ -35,7 +35,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[7.2]
       t.string :name
       t.integer :age
       t.text :self_description
-      t.integer :views
+      t.integer :views, default: 0
 
       t.timestamps null: false
     end

@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_19_202039) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "description"
-    t.integer "views"
+    t.integer "views", default: 0
     t.bigint "user_id", null: false
     t.bigint "category_id", null: false
     t.datetime "created_at", null: false
@@ -51,7 +51,7 @@ ActiveRecord::Schema[7.2].define(version: 2024_10_19_202039) do
     t.string "name"
     t.integer "age"
     t.text "self_description"
-    t.integer "views"
+    t.integer "views", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_users_on_email", unique: true
