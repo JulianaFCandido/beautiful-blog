@@ -21,11 +21,8 @@ group :development, :test do
   gem 'brakeman', '~> 6.2.2'
   gem 'debug', platforms: %i[mri windows], require: 'debug/prelude'
   gem 'rspec-rails', require: false
-  gem 'rubocop-discourse', require: false
-  gem 'rubocop-github', require: false
   gem 'rubocop-performance', require: false
   gem 'rubocop-rails', require: false
-  gem 'rubocop-rails-accessibility', require: false
   gem 'rubocop-rspec', require: false
   gem 'rubocop-rspec_rails', require: false
 end

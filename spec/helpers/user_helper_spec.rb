@@ -12,6 +12,6 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe UserHelper, type: :helper do
+RSpec.describe UserHelper do
   pending "add some examples to (or delete) #{__FILE__}"
 end

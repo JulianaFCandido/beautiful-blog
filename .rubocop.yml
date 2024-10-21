@@ -1,30 +1,22 @@
 require:
-  - rubocop-github
-  - rubocop-github-rails
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-rspec_rails
+
+inherit_mode:
+  merge:
+    - Exclude
 
 AllCops:
   NewCops: enable
-  SuggestExtensions: false
   Exclude:
-    - db/schema.rb
-    - db/migrate/*
-    - bin/bundle
-    - vendor/**/*.rb
+    - bin/**/*
 
 Style/BlockComments:
   Enabled: false
 Style/Documentation:
   Enabled: false
-Style/StringLiterals:
-  EnforcedStyle: single_quotes
-  SupportedStyles:
-    - single_quotes
-    - double_quotes
-Style/FrozenStringLiteralComment:
-  Enabled: true
-
-Bundler/OrderedGems:
-  Enabled: true
 
 Layout/LineLength:
   Max: 120
@@ -34,3 +26,6 @@ Layout/LineLength:
 Metrics/BlockLength:
   Exclude:
     - config/environments/*
+Metrics/MethodLength:
+  Exclude:
+    - db/migrate/*

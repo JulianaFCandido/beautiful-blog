@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Articles', type: :request do
+RSpec.describe 'Articles' do
   describe 'GET /index' do
     pending "add some examples (or delete) #{__FILE__}"
   end
