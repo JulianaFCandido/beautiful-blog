@@ -1,0 +1,58 @@
+glob: "**/*.{html,text,js}{+*,}.erb"
+
+exclude:
+  - '**/vendor/**/*'
+
+EnableDefaultLinters: true
+
+linters:
+  AllowedScriptType:
+    enabled: true
+
+  ClosingErbTagIndent:
+    enabled: false
+
+  ExtraNewline:
+    enabled: true
+
+  FinalNewline:
+    enabled: true
+
+  NoJavascriptTagHelper:
+    enabled: true
+
+  ParserErrors:
+    enabled: true
+
+  PartialInstanceVariable:
+    enabled: false
+
+  RequireInputAutocomplete:
+    enabled: false
+
+  RightTrim:
+    enabled: true
+
+  SelfClosingTag:
+    enabled: true
+
+  SpaceAroundErbTag:
+    enabled: true
+
+  SpaceIndentation:
+    enabled: true
+
+  SpaceInHtmlTag:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true
+
+  DeprecatedClasses:
+    enabled: true
+
+  ErbSafety:
+    enabled: true
+
+  RequireScriptNonce:
+    enabled: false
