@@ -1,7 +1,7 @@
 glob: "**/*.{html,text,js}{+*,}.erb"
 
 exclude:
-  - '**/vendor/**/*'
+  - 'vendor/**/*'
 
 EnableDefaultLinters: true
 
