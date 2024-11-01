@@ -29,3 +29,24 @@ pt-BR:
       user:
         one: Usuário
         other: Usuários
+  article:
+    create:
+      success: O artigo foi criado com sucesso
+    update:
+      success: O artigo foi atualizado com sucesso
+    destroy:
+      success: O artigo foi deletado com sucesso
+  category:
+    create:
+      success: A categoria foi criada com sucesso
+    update:
+      success: A categoria foi atualizada com sucesso
+    destroy:
+      success: A categoria foi deletada com sucesso
+  comment:
+    create:
+      success: O comentário foi criado com sucesso
+    update:
+      success: O comentário foi atualizado com sucesso
+    destroy:
+      success: O comentário foi deletado com sucesso

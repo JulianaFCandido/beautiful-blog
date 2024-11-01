@@ -29,3 +29,24 @@ en:
       user:
         one: User
         other: Users
+  article:
+    create:
+      success: Article was successfully created
+    update:
+      success: Article was successfully updated
+    destroy:
+      success: Article was successfully destroyed
+  category:
+    create:
+      success: Category was successfully created
+    update:
+      success: Category was successfully updated
+    destroy:
+      success: Category was successfully destroyed
+  Comment:
+    create:
+      success: Comment was successfully created
+    update:
+      success: Comment was successfully updated
+    destroy:
+      success: Comment was successfully destroyed
