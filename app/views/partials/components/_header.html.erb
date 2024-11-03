@@ -1,7 +1,52 @@
-<header class="sticky top-0 w-full">
-  <div class="py-5">
-    <h1>
-      Header over here
-    </h1>
+<header class="sticky top-0 w-full shadow mb-2 px-4 py-5">
+  <div class="flex flex-wrap sm:flex-nowrap items-center justify-between">
+    <section class="flex items-center w-full">
+      <%= link_to root_path do %>
+        <%= image_tag asset_path("favicon.ico"), class: 'mr-2 w-7 h-7' %>
+      <% end %>
+
+      <span class="font-black text-2xl">
+        Beautiful Blog
+      </span>
+
+      <label class="cursor-pointer text-xl sm:hidden ms-auto" for="navbar-open">
+        <span class="sr-only">
+          Toggle Navigation
+        </span>
+
+        <svg xmlns="http://www.w3.org/2000/svg"
+            width="0.88em"
+            height="1em"
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 448 512">
+          <path fill="currentColor"
+                d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </label>
+    </section>
+
+    <section>
+      <input class="peer hidden" type="checkbox" id="navbar-open">
+
+      <nav aria-label="Header Navigation" class="peer-checked:block hidden pl-2 py-6 sm:block sm:py-0">
+        <ul class="flex flex-col gap-y-4 sm:flex-row sm:gap-x-8">
+          <li>
+            <%= link_to t('navbar.home_item'), root_path, class: "text-gray-600 hover:text-blue-600" %>
+          </li>
+
+          <li>
+            <%= link_to t('navbar.about_item'), about_path, class: "text-gray-600 hover:text-blue-600" %>
+          </li>
+
+          <li>
+            <%= link_to t('navbar.articles_item'), articles_path, class: "text-gray-600 hover:text-blue-600" %>
+          </li>
+
+          <li>
+            <%= link_to t('navbar.contact_item'), new_contact_path, class: "text-gray-600 hover:text-blue-600" %>
+          </li>
+        </ul>
+      </nav>
+    </section>
   </div>
 </header>

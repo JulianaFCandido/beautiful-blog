@@ -10,7 +10,7 @@
         <aside class="hidden h-full flex-[0.3] md:block">
           <section class="grid h-full">
             <%= yield(:with_left_sidebar) %>
-          </setion>
+          </section>
         </aside>
       <% end %>
 
@@ -18,7 +18,7 @@
         <section class="flex h-full flex-col overflow-y-scroll">
           <%= render partial: 'partials/components/header' %>
 
-          <%= yield %>
+          <%= content_for?(:main_content) ? yield(:main_content) : yield %>
 
           <%= render partial: 'partials/components/footer' %>
         </section>
@@ -39,4 +39,4 @@
       <% end %>
     </div>
   </body>
- </html>
+</html>
