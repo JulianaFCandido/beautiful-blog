@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Beautiful Blog" %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
-    <%= yield :head %>
-
-    <link rel="manifest" href="/manifest.json">
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= render partial: 'partials/head' %>
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
+    <div class="container m-auto flex h-svh max-h-svh max-w-screen-xl">
+      <% if content_for?(:with_left_sidebar) %>
+        <aside class="hidden h-full flex-[0.3] md:block">
+          <section class="grid h-full">
+            <%= yield(:with_left_sidebar) %>
+          </setion>
+        </aside>
+      <% end %>
 
-      <%= yield %>
-    </main>
+      <main class="flex h-full flex-1 flex-col">
+        <section class="flex h-full flex-col overflow-y-scroll">
+          <%= render partial: 'partials/components/header' %>
+
+          <%= yield %>
+
+          <%= render partial: 'partials/components/footer' %>
+        </section>
+
+        <% if content_for?(:with_botton_navigation) %>
+          <nav class="sticky top-0 block md:hidden">
+            <%= yield(:with_botton_navigation) %>
+          </nav>
+        <% end %>
+      </main>
+
+      <% if content_for?(:with_right_sidebar) %>
+        <aside class="hidden h-full flex-[0.3] lg:block">
+          <section class="grid h-full">
+            <%= yield(:with_right_sidebar) %>
+          </section>
+        </aside>
+      <% end %>
+    </div>
   </body>
-</html>
+ </html>
