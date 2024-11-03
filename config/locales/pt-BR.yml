@@ -50,3 +50,8 @@ pt-BR:
       success: O comentário foi atualizado com sucesso
     destroy:
       success: O comentário foi deletado com sucesso
+  navbar:
+    home_item: Início
+    about_item: Sobre
+    articles_item: Artigos
+    contact_item: Contato

@@ -43,10 +43,15 @@ en:
       success: Category was successfully updated
     destroy:
       success: Category was successfully destroyed
-  Comment:
+  comment:
     create:
       success: Comment was successfully created
     update:
       success: Comment was successfully updated
     destroy:
       success: Comment was successfully destroyed
+  navbar:
+    home_item: Home
+    about_item: About
+    articles_item: Articles
+    contact_item: Contact
