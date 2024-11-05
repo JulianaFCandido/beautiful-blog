@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= render partial: 'partials/head' %>
+    <%= render partial: "partials/head" %>
   </head>
 
   <body>
-    <div class="container m-auto flex h-svh max-h-svh max-w-screen-xl">
+    <div class="container m-auto flex h-svh max-h-svh max-w-screen-2xl">
       <% if content_for?(:with_left_sidebar) %>
         <aside class="hidden h-full flex-[0.3] md:block">
           <section class="grid h-full">
@@ -16,11 +16,11 @@
 
       <main class="flex h-full flex-1 flex-col">
         <section class="flex h-full flex-col overflow-y-scroll">
-          <%= render partial: 'partials/components/header' %>
+          <%= render partial: "partials/components/header" %>
 
           <%= content_for?(:main_content) ? yield(:main_content) : yield %>
 
-          <%= render partial: 'partials/components/footer' %>
+          <%= render partial: "partials/components/footer" %>
         </section>
 
         <% if content_for?(:with_botton_navigation) %>
