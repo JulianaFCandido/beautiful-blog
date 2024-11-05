@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp');
 
 @tailwind base;
 @tailwind components;
