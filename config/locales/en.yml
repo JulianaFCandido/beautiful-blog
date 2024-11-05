@@ -50,8 +50,29 @@ en:
       success: Comment was successfully updated
     destroy:
       success: Comment was successfully destroyed
+  app_name: Beautiful Blog
   navbar:
     home_item: Home
     about_item: About
     articles_item: Articles
     contact_item: Contact
+  footer:
+    description: Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+    information:
+      title: Information
+      terms_of_use: Terms of Use
+      about: About
+      privacy_policy: Privacy Policy
+      help: Help
+    categories:
+      title: Categories
+      chefs_dishes: Chef`s Dishes
+      desserts: Dessets
+      recipes: Recipes
+      life_style: Life Style
+    questions:
+      title: Any Question?
+      address: 203 Fake St. Mountain View, San Francisco, California, USA
+      phone_number: +2 392 3929 210
+      email: info@beautiful_blog.com
+    copyright: "Copyright © %{current_year} All rights reserved | Template made by Juliana Candido"

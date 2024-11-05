@@ -50,8 +50,29 @@ pt-BR:
       success: O comentário foi atualizado com sucesso
     destroy:
       success: O comentário foi deletado com sucesso
+  app_name: Beautiful Blog
   navbar:
     home_item: Início
     about_item: Sobre
     articles_item: Artigos
     contact_item: Contato
+  footer:
+    description: De acordo com a segunda tópica freudiana, o princípio suscetível que serve de base aferra o desejo à Coisa que não há Outro do Outro.
+    information:
+      title: Informação
+      terms_of_use: Termos de uso
+      about: Sobre
+      privacy_policy: Política de Privacidade
+      help: Ajuda
+    categories:
+      title: Categorias
+      chefs_dishes: Pratos de Chef
+      desserts: Sobremesas
+      recipes: Receitas
+      life_style: Estilo de vida
+    questions:
+      title: Alguma pergunta?
+      address: Rua qualquer uma, 123, Cidade, Estado - SP
+      phone_number: (11) 11111-1111
+      email: info@beautiful_blog.com
+    copyright: "Copyright © %{current_year} Todos os direitos reservados | Template criado por Juliana Candido"

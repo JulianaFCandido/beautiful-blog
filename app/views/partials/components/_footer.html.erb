@@ -1,85 +1,131 @@
 <footer class="w-full py-20 sm:py-28 px-4 bg-neutral-800 text-neutral-300">
-  <div class="flex flex-col sm:flex-row justify-between gap-4 mx-4 sm:mx-14">
+  <div class="flex flex-col sm:flex-row justify-between gap-14 mx-4 sm:mx-14">
     <section class="flex-[0.4]">
       <h2 class="text-xl text-neutral-50 mb-9">
-        Beautiful Blog
+        <%= t("app_name") %>
       </h2>
 
       <p class="py-2 leading-relaxed">
-        Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-        there live the blind texts.
+        <small>
+          <%= t("footer.description") %>
+        </small>
       </p>
     </section>
 
     <section class="flex-[0.4]">
       <h2 class="text-xl text-neutral-50 mb-9">
-        Informação
+        <%= t("footer.information.title") %>
       </h2>
 
-      <p class="py-2">
-        Termos de uso
-      </p>
+      <ul>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.information.terms_of_use") %>
+            </small>
+          <% end %>
+        </li>
 
-      <p class="py-2">
-        Sobre
-      </p>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.information.about") %>
+            </small>
+          <% end %>
+        </li>
 
-      <p class="py-2">
-        Política de Privacidade
-      </p>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.information.privacy_policy") %>
+            </small>
+          <% end %>
+        </li>
 
-      <p class="py-2">
-        Ajuda
-      </p>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.information.help") %>
+            </small>
+          <% end %>
+        </li>
+      </ul>
     </section>
 
     <section class="flex-[0.4]">
       <h2 class="text-xl text-neutral-50 mb-9">
-        Categorias
+        <%= t("footer.categories.title") %>
       </h2>
 
-      <p class="py-2">
-        Pratos de Chef
-      </p>
+      <ul>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.categories.chefs_dishes") %>
+            </small>
+          <% end %>
+        </li>
 
-      <p class="py-2">
-        Sobremesas
-      </p>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.categories.desserts") %>
+            </small>
+          <% end %>
+        </li>
 
-      <p class="py-2">
-        Receitas
-      </p>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.categories.recipes") %>
+            </small>
+          <% end %>
+        </li>
 
-      <p class="py-2">
-        Estilo de vida
-      </p>
+        <li class="py-2">
+          <%= link_to root_path, class: "hover:text-blue-600" do %>
+            <small>
+              <%= t("footer.categories.life_style") %>
+            </small>
+          <% end %>
+        </li>
+      </ul>
     </section>
 
     <section class="flex-[0.4]">
       <h2 class="text-xl text-neutral-50 mb-9">
-        Alguma pergunta?
+        <%= t("footer.questions.title") %>
       </h2>
 
       <p class="py-2 flex gap-4">
         <i class="material-symbols-rounded">pin_drop</i>
-        203 Fake St. Mountain View, San Francisco, California, USA
+
+        <small>
+          <%= t("footer.questions.address") %>
+        </small>
       </p>
 
       <p class="py-2 flex gap-4">
         <i class="material-symbols-rounded">call</i>
-        +2 392 3929 210
+
+        <small>
+          <%= t("footer.questions.phone_number") %>
+        </small>
       </p>
 
       <p class="py-2 flex gap-4">
         <i class="material-symbols-rounded">mail</i>
-        info@yourdomain.com
+
+        <small>
+          <%= t("footer.questions.email") %>
+        </small>
       </p>
     </section>
   </div>
 
   <section class="flex justify-center mt-16 sm:mt-24">
     <p class="text-center">
-      Copyright © <%= current_year %> All rights reserved | Template made by Juliana Candido
+      <%= t("footer.copyright", current_year: Date.today.year) %>
     </p>
   </section>
 </footer>
